@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #444;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.structure {
+    width: 270px;
+    height: 500px;
+    box-shadow: -3px 5px 15px #111;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.structure .black-window {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #000;
+    z-index: 2;
+    transition: 0.5s ease;
+}
+
+.structure .top {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: 0;
+    z-index: 5;
+    background: #1d1d1d;
+}
+
+.structure .bottom {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    bottom: 0;
+    z-index: 5;
+    background: #1d1d1d;
+}
+
+.structure .border {
+    width: 100%;
+    height: 100%;
+    border: 20px solid #1d1d1d;
+    border-radius: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+.structure .button1 {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #111;
+    border: 1px solid #fff;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.structure .button2 {
+    position: absolute;
+    top: 50px;
+    right: -3px;
+    width: 5px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #111;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.structure .screen {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://4.bp.blogspot.com/-yeVRdSbhd1s/WxjImm-8shI/AAAAAAAAGXo/lirkqq4JePoYgCEl6GO-K31GGASC9gzUgCLcBGAs/s1600/Landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.screen .clock {
+    position: absolute;
+    top: 100px;
+    font-size: 45px;
+    box-shadow: 0 0 10px #000;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.screen .text {
+    position: absolute;
+    top: 200px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
